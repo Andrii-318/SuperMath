@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>SuperMath</title>
+    <link
+      rel="stylesheet"
+      href="styles/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>SuperMath</h1>
+      <form id="superMathForm">
+        <label for="numberX">Число X:</label>
+        <input
+          type="number"
+          id="numberX"
+          name="numberX"
+          required />
+        <label for="numberY">Число Y:</label>
+        <input
+          type="number"
+          id="numberY"
+          name="numberY"
+          required />
+        <label for="operator">Оператор (+, -, /, *, %):</label>
+        <input
+          type="text"
+          id="operator"
+          name="operator"
+          pattern="[+\-*\/%]"
+          required />
+        <button type="submit">Перевірити</button>
+      </form>
+      <div id="result"></div>
+    </div>
+    <script src="src/script.js"></script>
+  </body>
+</html>
